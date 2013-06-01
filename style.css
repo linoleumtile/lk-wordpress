@@ -1,0 +1,241 @@
+/*
+Theme Name: Lauren Krieger
+Description: Portfolio theme for Lauren Krieger's website
+Author: @linoleumtile - Beth McKeever
+Version: 1.0
+Tags: 
+*/
+
+/* ====== IMPORT OTHER STYLESHEETS + FONTS ====== */
+
+@import url('css/bootstrap.css'); 
+@import url('css/bootstrap-responsive.css'); 
+@import url('http://fonts.googleapis.com/css?family=Sacramento');
+@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic');
+
+/* ====== BACKGROUND ====== */
+
+/* seigaiha pattern from lea verou */
+html, body {
+  background-size:100px 50px;
+  background-color:rgb(255,255,255);
+  background-image:-webkit-radial-gradient(100% 150%,circle,rgb(247,247,247) 24%,rgb(255,255,255) 25%,rgb(255,255,255) 28%,rgb(247,247,247) 29%,rgb(247,247,247) 36%,rgb(255,255,255) 36%,rgb(255,255,255) 40%,transparent 40%,transparent),-webkit-radial-gradient(0    150%,circle,rgb(247,247,247) 24%,rgb(255,255,255) 25%,rgb(255,255,255) 28%,rgb(247,247,247) 29%,rgb(247,247,247) 36%,rgb(255,255,255) 36%,rgb(255,255,255) 40%,transparent 40%,transparent),-webkit-radial-gradient(50%  100%,circle,rgb(255,255,255) 10%,rgb(247,247,247) 11%,rgb(247,247,247) 23%,rgb(255,255,255) 24%,rgb(255,255,255) 30%,rgb(247,247,247) 31%,rgb(247,247,247) 43%,rgb(255,255,255) 44%,rgb(255,255,255) 50%,rgb(247,247,247) 51%,rgb(247,247,247) 63%,rgb(255,255,255) 64%,rgb(255,255,255) 71%,transparent 71%,transparent),-webkit-radial-gradient(100% 50%,circle,rgb(255,255,255) 5%,rgb(247,247,247) 6%,rgb(247,247,247) 15%,rgb(255,255,255) 16%,rgb(255,255,255) 20%,rgb(247,247,247) 21%,rgb(247,247,247) 30%,rgb(255,255,255) 31%,rgb(255,255,255) 35%,rgb(247,247,247) 36%,rgb(247,247,247) 45%,rgb(255,255,255) 46%,rgb(255,255,255) 49%,transparent 50%,transparent),-webkit-radial-gradient(0    50%,circle,rgb(255,255,255) 5%,rgb(247,247,247) 6%,rgb(247,247,247) 15%,rgb(255,255,255) 16%,rgb(255,255,255) 20%,rgb(247,247,247) 21%,rgb(247,247,247) 30%,rgb(255,255,255) 31%,rgb(255,255,255) 35%,rgb(247,247,247) 36%,rgb(247,247,247) 45%,rgb(255,255,255) 46%,rgb(255,255,255) 49%,transparent 50%,transparent);
+  background-image:-moz-radial-gradient(100% 150%,circle,rgb(247,247,247) 24%,rgb(255,255,255) 25%,rgb(255,255,255) 28%,rgb(247,247,247) 29%,rgb(247,247,247) 36%,rgb(255,255,255) 36%,rgb(255,255,255) 40%,transparent 40%,transparent),-moz-radial-gradient(0    150%,circle,rgb(247,247,247) 24%,rgb(255,255,255) 25%,rgb(255,255,255) 28%,rgb(247,247,247) 29%,rgb(247,247,247) 36%,rgb(255,255,255) 36%,rgb(255,255,255) 40%,transparent 40%,transparent),-moz-radial-gradient(50%  100%,circle,rgb(255,255,255) 10%,rgb(247,247,247) 11%,rgb(247,247,247) 23%,rgb(255,255,255) 24%,rgb(255,255,255) 30%,rgb(247,247,247) 31%,rgb(247,247,247) 43%,rgb(255,255,255) 44%,rgb(255,255,255) 50%,rgb(247,247,247) 51%,rgb(247,247,247) 63%,rgb(255,255,255) 64%,rgb(255,255,255) 71%,transparent 71%,transparent),-moz-radial-gradient(100% 50%,circle,rgb(255,255,255) 5%,rgb(247,247,247) 6%,rgb(247,247,247) 15%,rgb(255,255,255) 16%,rgb(255,255,255) 20%,rgb(247,247,247) 21%,rgb(247,247,247) 30%,rgb(255,255,255) 31%,rgb(255,255,255) 35%,rgb(247,247,247) 36%,rgb(247,247,247) 45%,rgb(255,255,255) 46%,rgb(255,255,255) 49%,transparent 50%,transparent),-moz-radial-gradient(0    50%,circle,rgb(255,255,255) 5%,rgb(247,247,247) 6%,rgb(247,247,247) 15%,rgb(255,255,255) 16%,rgb(255,255,255) 20%,rgb(247,247,247) 21%,rgb(247,247,247) 30%,rgb(255,255,255) 31%,rgb(255,255,255) 35%,rgb(247,247,247) 36%,rgb(247,247,247) 45%,rgb(255,255,255) 46%,rgb(255,255,255) 49%,transparent 50%,transparent);
+  background-image:radial-gradient(100% 150%,circle,rgb(247,247,247) 24%,rgb(255,255,255) 25%,rgb(255,255,255) 28%,rgb(247,247,247) 29%,rgb(247,247,247) 36%,rgb(255,255,255) 36%,rgb(255,255,255) 40%,transparent 40%,transparent),radial-gradient(0    150%,circle,rgb(247,247,247) 24%,rgb(255,255,255) 25%,rgb(255,255,255) 28%,rgb(247,247,247) 29%,rgb(247,247,247) 36%,rgb(255,255,255) 36%,rgb(255,255,255) 40%,transparent 40%,transparent),radial-gradient(50%  100%,circle,rgb(255,255,255) 10%,rgb(247,247,247) 11%,rgb(247,247,247) 23%,rgb(255,255,255) 24%,rgb(255,255,255) 30%,rgb(247,247,247) 31%,rgb(247,247,247) 43%,rgb(255,255,255) 44%,rgb(255,255,255) 50%,rgb(247,247,247) 51%,rgb(247,247,247) 63%,rgb(255,255,255) 64%,rgb(255,255,255) 71%,transparent 71%,transparent),radial-gradient(100% 50%,circle,rgb(255,255,255) 5%,rgb(247,247,247) 6%,rgb(247,247,247) 15%,rgb(255,255,255) 16%,rgb(255,255,255) 20%,rgb(247,247,247) 21%,rgb(247,247,247) 30%,rgb(255,255,255) 31%,rgb(255,255,255) 35%,rgb(247,247,247) 36%,rgb(247,247,247) 45%,rgb(255,255,255) 46%,rgb(255,255,255) 49%,transparent 50%,transparent),radial-gradient(0    50%,circle,rgb(255,255,255) 5%,rgb(247,247,247) 6%,rgb(247,247,247) 15%,rgb(255,255,255) 16%,rgb(255,255,255) 20%,rgb(247,247,247) 21%,rgb(247,247,247) 30%,rgb(255,255,255) 31%,rgb(255,255,255) 35%,rgb(247,247,247) 36%,rgb(247,247,247) 45%,rgb(255,255,255) 46%,rgb(255,255,255) 49%,transparent 50%,transparent);
+}
+
+/* ====== FONTS/TYPEFACES ====== */
+
+/* setup "fancy" style */
+.fancy {
+  font-family: 'Sacramento', cursive;
+  font-size: 150%;
+}
+
+/* setup all body copy font-family */
+html, body {
+  font-family: 'Noto Serif', serif;
+  color: #391730;
+}
+
+/* ====== NAVBAR ====== */
+
+/* set navbar width */
+.navbar {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+/* change navbar color */
+.navbar-inner {
+  background-color: #F3E5F5;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+/* TO DO: fix this */
+/* ul.dropdown-menu {
+  background-color: #F3E5F5;
+} */
+
+/* change navbar text styling */
+.navbar .brand {
+  font-family: 'Sacramento', cursive;
+  color: #391730;
+  font-size: 120%;
+}
+.navbar .nav > li > a {
+  color: #391730;
+}
+
+/* TO DO: forgot what this does - figure out */
+@media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+}
+
+/* DON'T NEED ??? fix the header hiding behind the nav at large screen sizes 
+@media (min-width: 980px) {
+  body {
+    padding-top: 0;
+  }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: static;
+  }
+} */
+
+/* ====== HEADER ====== */
+
+/* line the site title up with the navbar */
+.jumbotron h1 {
+  width: 91%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line the site tagline up with the navbar */
+.jumbotron h4 {
+  width: 91%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* strip link styling off of headers */
+.plain {
+      color: #391730;
+}
+
+/* ====== BODY ====== */
+.container-fluid {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ====== IMAGES ====== */
+@media (max-width: 800px) {
+  img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+}
+
+/* ====== POSTS ====== */
+
+/* reduce the size of blog post headers */
+.blog h1 {
+  font-size: 28.5
+}
+
+/* ====== SIDEBAR ====== */
+
+/*hide sidebar for small screens */
+@media (max-width: 980px) {
+  .sidebar {
+    visibility: hidden;
+  }
+}
+
+/* ====== FOOTER ====== */
+
+/* style the footer */
+.footer {
+  padding: 30px;
+  margin-top: 70px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #F3E5F5;
+  display: inline-block;
+}
+
+/* style the footer widget titles */
+h2.widgettitle {
+  font-size: 20px;
+}
+
+/* ====== MISCELLANEOUS ====== */
+
+/* remove bullets from a list (because the widgets are set in unordered lists and widget titles don't need bullets) */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: inherit;
+  padding: inherit;
+  margin: inherit;
+  background-color: inherit;
+}
+
+/* create a class for bullets just in case */
+ul.bullets {
+  list-style-type: circle;
+}
+
+/* create a class to add extra padding */
+.padding25 {
+  padding-top: 25px;
+}
+
+/* create img grid -- modified version of http://css-tricks.com/seamless-responsive-photo-grid/ */
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 3;
+   -webkit-column-gap:   30px;
+   -moz-column-count:    3;
+   -moz-column-gap:      30px;
+   column-count:         3;
+   column-gap:           30px;
+   
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+/* change horizontal rule color */
+hr {
+  border-bottom: 1px solid #391730;
+}
